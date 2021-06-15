@@ -1,0 +1,2240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 4.0.0?>
+
+<cproject>
+<storageModule moduleId="org.eclipse.cdt.core.settings">
+<cconfiguration id="com.qnx.qcc.configuration.exe.debug.585295030">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.debug.585295030" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+<externalSettings/>
+<extensions>
+<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<configuration artifactName="VirtualAddressAccess" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" description="" id="com.qnx.qcc.configuration.exe.debug.585295030" name="Debug" parent="com.qnx.qcc.configuration.exe.debug">
+<folderInfo id="com.qnx.qcc.configuration.exe.debug.585295030." name="/" resourcePath="">
+<toolChain id="com.qnx.qcc.toolChain.exe.debug.242938767" name="QNX QCC" superClass="com.qnx.qcc.toolChain.exe.debug">
+<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.29415919" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+<builder buildPath="${workspace_loc:/VirtualAddressAccess/Debug}" id="com.qnx.nto.1538445040" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+<tool id="com.qnx.qcc.tool.compiler.1246598959" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+<option id="com.qnx.qcc.option.compile.debug.1656964363" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
+<inputType id="com.qnx.qcc.inputType.compiler.2079709317" superClass="com.qnx.qcc.inputType.compiler"/>
+</tool>
+<tool id="com.qnx.qcc.tool.assembler.810363858" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+<option id="com.qnx.qcc.option.assembler.debug.444823253" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+<inputType id="com.qnx.qcc.inputType.assembler.1316011045" superClass="com.qnx.qcc.inputType.assembler"/>
+</tool>
+<tool id="com.qnx.qcc.tool.linker.1934181219" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+<option id="com.qnx.qcc.option.linker.langcpp.658042839" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+<option id="com.qnx.qcc.option.linker.debug.1552135310" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
+<inputType id="com.qnx.qcc.inputType.linker.846989394" superClass="com.qnx.qcc.inputType.linker">
+<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+<additionalInput kind="additionaldependency" paths="$(LIB_DEPS)"/>
+</inputType>
+</tool>
+<tool id="com.qnx.qcc.tool.archiver.59720528" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+</toolChain>
+</folderInfo>
+<sourceEntries>
+<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+</sourceEntries>
+</configuration>
+</storageModule>
+<storageModule moduleId="scannerConfiguration">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.904968826">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.debug.585295030">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.release.800291128">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.coverage.1441010292">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+</cconfiguration>
+<cconfiguration id="com.qnx.qcc.configuration.exe.release.800291128">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.release.800291128" moduleId="org.eclipse.cdt.core.settings" name="Release">
+<externalSettings/>
+<extensions>
+<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<configuration artifactName="VirtualAddressAccess" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" description="" id="com.qnx.qcc.configuration.exe.release.800291128" name="Release" parent="com.qnx.qcc.configuration.exe.release">
+<folderInfo id="com.qnx.qcc.configuration.exe.release.800291128." name="/" resourcePath="">
+<toolChain id="com.qnx.qcc.toolChain.exe.release.653618480" name="QNX QCC" superClass="com.qnx.qcc.toolChain.exe.release">
+<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.1722628482" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+<builder buildPath="${workspace_loc:/VirtualAddressAccess/Release}" id="com.qnx.nto.2058431064" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+<tool id="com.qnx.qcc.tool.compiler.87979134" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+<option id="com.qnx.qcc.option.compiler.optlevel.1674678071" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.2" valueType="enumerated"/>
+<inputType id="com.qnx.qcc.inputType.compiler.1679104555" superClass="com.qnx.qcc.inputType.compiler"/>
+</tool>
+<tool id="com.qnx.qcc.tool.assembler.1955412298" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+<inputType id="com.qnx.qcc.inputType.assembler.1821901478" superClass="com.qnx.qcc.inputType.assembler"/>
+</tool>
+<tool id="com.qnx.qcc.tool.linker.461848100" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+<option id="com.qnx.qcc.option.linker.langcpp.318588464" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+<inputType id="com.qnx.qcc.inputType.linker.1617149794" superClass="com.qnx.qcc.inputType.linker">
+<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+<additionalInput kind="additionaldependency" paths="$(LIB_DEPS)"/>
+</inputType>
+</tool>
+<tool id="com.qnx.qcc.tool.archiver.1376004379" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+</toolChain>
+</folderInfo>
+<sourceEntries>
+<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+</sourceEntries>
+</configuration>
+</storageModule>
+<storageModule moduleId="scannerConfiguration">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.904968826">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.debug.585295030">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.release.800291128">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.coverage.1441010292">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+</cconfiguration>
+<cconfiguration id="com.qnx.qcc.configuration.exe.profile.904968826">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.profile.904968826" moduleId="org.eclipse.cdt.core.settings" name="Profile">
+<externalSettings/>
+<extensions>
+<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<configuration artifactName="VirtualAddressAccess" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=com.qnx.buildType.profile" description="Build for Profiling" id="com.qnx.qcc.configuration.exe.profile.904968826" name="Profile" parent="com.qnx.qcc.configuration.exe.profile">
+<folderInfo id="com.qnx.qcc.configuration.exe.profile.904968826." name="/" resourcePath="">
+<toolChain id="com.qnx.qcc.toolChain.exe.profile.1743290278" name="QNX QCC" superClass="com.qnx.qcc.toolChain.exe.profile">
+<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.420623095" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+<builder buildPath="${workspace_loc:/VirtualAddressAccess/Profile}" id="com.qnx.nto.2102672622" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+<tool id="com.qnx.qcc.tool.compiler.46816312" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+<option id="com.qnx.qcc.option.compile.debug.53444617" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
+<option id="com.qnx.qcc.option.compiler.profile2.454130113" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
+<inputType id="com.qnx.qcc.inputType.compiler.750472495" superClass="com.qnx.qcc.inputType.compiler"/>
+</tool>
+<tool id="com.qnx.qcc.tool.assembler.1553710019" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+<option id="com.qnx.qcc.option.assembler.debug.1152901591" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+<inputType id="com.qnx.qcc.inputType.assembler.1953790230" superClass="com.qnx.qcc.inputType.assembler"/>
+</tool>
+<tool id="com.qnx.qcc.tool.linker.1544033492" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+<option id="com.qnx.qcc.option.linker.langcpp.1144867129" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+<option id="com.qnx.qcc.option.linker.debug.1108007709" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
+<option id="com.qnx.qcc.option.linker.profile2.2105418887" name="Build for Profiling (Function Instrumentation) (-lprofiling)" superClass="com.qnx.qcc.option.linker.profile2" value="true" valueType="boolean"/>
+<inputType id="com.qnx.qcc.inputType.linker.2039084824" superClass="com.qnx.qcc.inputType.linker">
+<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+<additionalInput kind="additionaldependency" paths="$(LIB_DEPS)"/>
+</inputType>
+</tool>
+<tool id="com.qnx.qcc.tool.archiver.1223301797" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+</toolChain>
+</folderInfo>
+<sourceEntries>
+<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+</sourceEntries>
+</configuration>
+</storageModule>
+<storageModule moduleId="scannerConfiguration">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.904968826">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.debug.585295030">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.release.800291128">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.coverage.1441010292">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+</cconfiguration>
+<cconfiguration id="com.qnx.qcc.configuration.exe.profile.coverage.1441010292">
+<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.profile.coverage.1441010292" moduleId="org.eclipse.cdt.core.settings" name="Coverage">
+<externalSettings/>
+<extensions>
+<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+</extensions>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<configuration artifactName="VirtualAddressAccess" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=com.qnx.buildType.coverage" description="Build for Code Coverage" id="com.qnx.qcc.configuration.exe.profile.coverage.1441010292" name="Coverage" parent="com.qnx.qcc.configuration.exe.profile.coverage">
+<folderInfo id="com.qnx.qcc.configuration.exe.profile.coverage.1441010292." name="/" resourcePath="">
+<toolChain id="com.qnx.qcc.toolChain.exe.coverage.444687154" name="QNX QCC" superClass="com.qnx.qcc.toolChain.exe.coverage">
+<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.480424814" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+<builder buildPath="${workspace_loc:/VirtualAddressAccess/Coverage}" id="com.qnx.nto.1506711314" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.qnx.nto"/>
+<tool id="com.qnx.qcc.tool.compiler.1220114728" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+<option id="com.qnx.qcc.option.compile.debug.92672829" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
+<option id="com.qnx.qcc.option.compiler.coverage.373561051" name="Build for Code Coverage" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
+<inputType id="com.qnx.qcc.inputType.compiler.1891008667" superClass="com.qnx.qcc.inputType.compiler"/>
+</tool>
+<tool id="com.qnx.qcc.tool.assembler.2083532523" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+<inputType id="com.qnx.qcc.inputType.assembler.2094037142" superClass="com.qnx.qcc.inputType.assembler"/>
+</tool>
+<tool id="com.qnx.qcc.tool.linker.503518066" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+<option id="com.qnx.qcc.option.linker.langcpp.133563443" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+<option id="com.qnx.qcc.option.linker.debug.754978282" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
+<option id="com.qnx.qcc.option.linker.coverage.1776490801" name="Build for Code Coverage (-ftest-coverage -fprofile-arcs -p)" superClass="com.qnx.qcc.option.linker.coverage" value="true" valueType="boolean"/>
+<option id="com.qnx.qcc.option.linker.profile.522551420" name="Build for Profiling (Call Count) (-p)" superClass="com.qnx.qcc.option.linker.profile" value="true" valueType="boolean"/>
+<inputType id="com.qnx.qcc.inputType.linker.696558608" superClass="com.qnx.qcc.inputType.linker">
+<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+<additionalInput kind="additionaldependency" paths="$(LIB_DEPS)"/>
+</inputType>
+</tool>
+<tool id="com.qnx.qcc.tool.archiver.1704987814" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+</toolChain>
+</folderInfo>
+<sourceEntries>
+<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+</sourceEntries>
+</configuration>
+</storageModule>
+<storageModule moduleId="scannerConfiguration">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.904968826">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.debug.585295030">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.release.800291128">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+<scannerConfigBuildInfo instanceId="com.qnx.qcc.configuration.exe.profile.coverage.1441010292">
+<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo"/>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfo">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccSpecsFile">
+<runAction arguments="-E -Wp,-P -Wp,-v -Wp,-dD ${plugin_state_location}/${specs_file}" command="qcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="com.qnx.tools.ide.qde.managedbuilder.core.qccScannerInfoPerFile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="qccMakeFileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk | -E -Wp,-P -Wp,-v -Wp,-dD" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="makefileGenerator">
+<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+<buildOutputProvider>
+<openAction enabled="true" filePath=""/>
+<parser enabled="true"/>
+</buildOutputProvider>
+<scannerInfoProvider id="specsFile">
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+<parser enabled="true"/>
+</scannerInfoProvider>
+</profile>
+</scannerConfigBuildInfo>
+</storageModule>
+<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+</cconfiguration>
+</storageModule>
+<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+<project id="VirtualAddressAccess.com.qnx.projectType.exe.648503755" name="Executable" projectType="com.qnx.projectType.exe"/>
+</storageModule>
+</cproject>
