@@ -1,5 +1,6 @@
-/*
+*
 
-!.DemoMovingObject*
+!DemoMovingObject/
 !.gitignore
-!.VirtualAddressAccess
+!VirtualAddressAccess/
+!DemoMovingObject_f
